@@ -42,6 +42,7 @@
       "wezterm"
       "claude"
       "claude-code"
+      "openwhispr"
     ];
   };
 }
