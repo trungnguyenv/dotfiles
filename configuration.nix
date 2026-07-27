@@ -43,6 +43,7 @@
       "claude"
       "claude-code"
       "openwhispr"
+      "monitorcontrol"
     ];
   };
 }
