@@ -1,4 +1,4 @@
-{ user, ... }:
+{ user, treehouse, pkgs, ... }:
 
 {
   nix.enable = false;
@@ -12,11 +12,13 @@
   };
 
   system.stateVersion = 6;
+  environment.systemPackages = [ treehouse.packages.${pkgs.system}.default pkgs.nodejs_24 ];
   system.defaults = {
     NSGlobalDomain = {
       AppleInterfaceStyle = "Dark";
       KeyRepeat = 2;          # fast key repeat
       InitialKeyRepeat = 15;  # short delay before repeat
+      ApplePressAndHoldEnabled = false;  # holding a key repeats it instead of showing accent popup
       _HIHideMenuBar = false;  # auto-hide the menu bar
       AppleShowAllExtensions = true;
     };
