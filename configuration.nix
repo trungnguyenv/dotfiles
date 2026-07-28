@@ -1,4 +1,4 @@
-{ user, treehouse, pkgs, ... }:
+{ user, ... }:
 
 {
   nix.enable = false;
@@ -12,7 +12,6 @@
   };
 
   system.stateVersion = 6;
-  environment.systemPackages = [ treehouse.packages.${pkgs.system}.default pkgs.nodejs_24 ];
   system.defaults = {
     NSGlobalDomain = {
       AppleInterfaceStyle = "Dark";
