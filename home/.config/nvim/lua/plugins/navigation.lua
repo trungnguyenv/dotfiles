@@ -1,6 +1,7 @@
 return {
   {
     'stevearc/oil.nvim',
+    lazy = false,  -- load at startup so it can hijack netrw for `nvim <dir>`
     opts = { view_options = { show_hidden = true } },
     keys = { { '<leader>e', '<cmd>Oil<cr>', desc = 'File Browser' } },
   },
