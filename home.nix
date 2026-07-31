@@ -25,6 +25,8 @@ in
   fonts.fontconfig.enable = true;
   home.sessionVariables.EDITOR = "nvim";
 
+  programs.gh.enable = true;
+
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;      # ghost text from history
