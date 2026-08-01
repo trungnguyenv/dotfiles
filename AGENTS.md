@@ -26,3 +26,17 @@ Personal nix-darwin flake for a single Mac (`darwinConfigurations."mac"`, aarch6
 - **nix pkgs** (`home.packages` in `home.nix`) for CLI tools, language toolchains, libraries — reproducible and pinned.
 - **Homebrew** (`homebrew.casks`/`homebrew.brews` in `configuration.nix`) for GUI apps and anything needing deep macOS integration — nixpkgs' Darwin GUI packaging is often unsigned/unnotarized and fights Gatekeeper. Mac App Store apps go through `mas`.
 - Don't install the same tool from both — causes PATH conflicts. Remember `onActivation.cleanup = "zap"` will remove any Homebrew package not declared in `configuration.nix`.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live as GitHub Issues on `trungnguyenv/dotfiles`, managed via the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default label vocabulary (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context layout (`CONTEXT.md` + `docs/adr/` at the repo root, created lazily). See `docs/agents/domain.md`.
