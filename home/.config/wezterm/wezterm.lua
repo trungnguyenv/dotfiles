@@ -9,4 +9,8 @@ config.window_close_confirmation = "NeverPrompt"
 config.scrollback_lines = 5000
 config.hide_tab_bar_if_only_one_tab = true
 
+config.keys = {
+	{ key = "Enter", mods = "CMD", action = wezterm.action.ToggleFullScreen },
+}
+
 return config
