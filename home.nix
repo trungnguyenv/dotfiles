@@ -26,6 +26,7 @@ in
     fzf       # fuzzy finder
     jq        # json on the command line
     lazygit
+    btop      # process/resource monitor
     neovim
     nodejs_24
     # the font everything renders in
@@ -36,7 +37,13 @@ in
   fonts.fontconfig.enable = true;
   home.sessionVariables.EDITOR = "nvim";
 
-  programs.gh.enable = true;
+  programs.gh = {
+    enable = true;
+    settings = {
+      git_protocol = "https";
+      aliases.co = "pr checkout";
+    };
+  };
 
   programs.zsh = {
     enable = true;
