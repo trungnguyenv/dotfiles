@@ -45,6 +45,7 @@
       "claude-code"
       "openwhispr"
       "monitorcontrol"
+      "antigravity-cli"
     ];
   };
 }
