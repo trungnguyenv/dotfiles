@@ -29,6 +29,7 @@ in
     btop      # process/resource monitor
     neovim
     nodejs_24
+    awscli2   # AWS CLI v2
     # the font everything renders in
     nerd-fonts.hack
   ]) ++ [
