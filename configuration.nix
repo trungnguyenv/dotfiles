@@ -46,6 +46,7 @@
       "openwhispr"
       "monitorcontrol"
       "antigravity-cli"
+      "codex"
     ];
   };
 }
