@@ -1,4 +1,4 @@
-{ config, pkgs, lib, user, treehouse, ... }:
+{ config, pkgs, lib, user, treehouse, pkgs-unstable, ... }:
 let
   dotfiles = "${config.home.homeDirectory}/.dotfiles";
   # Edit-in-place: the real file stays in my repo, ~/.config just points at it.
@@ -26,7 +26,7 @@ in
     fzf       # fuzzy finder
     jq        # json on the command line
     lazygit
-    mactop    # process/resource monitor
+    pkgs-unstable.mactop  # process/resource monitor (unstable channel)
     neovim
     nodejs_24
     awscli2   # AWS CLI v2
