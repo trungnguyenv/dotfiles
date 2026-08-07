@@ -26,10 +26,13 @@ in
     fzf       # fuzzy finder
     jq        # json on the command line
     lazygit
-    btop      # process/resource monitor
+    mactop    # process/resource monitor
     neovim
     nodejs_24
     awscli2   # AWS CLI v2
+    jdk17     # Java 17
+    maven
+    gradle
     # the font everything renders in
     nerd-fonts.hack
   ]) ++ [
