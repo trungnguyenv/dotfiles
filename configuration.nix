@@ -38,6 +38,9 @@
     brews = [
       "herdr"
       "mole"
+      "glow"
+      "git-delta"
+      "bat"
     ];
     casks = [
       "wezterm"
