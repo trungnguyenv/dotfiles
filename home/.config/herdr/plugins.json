@@ -2,7 +2,7 @@
   {
     "plugin_id": "herdr-file-viewer",
     "name": "herdr-file-viewer",
-    "version": "1.15.0",
+    "version": "1.16.0",
     "min_herdr_version": "0.7.0",
     "description": "A git-aware, read-only file viewer: a keyboard-driven TUI in a herdr split pane.",
     "manifest_path": "/Users/trungnguyen/Workspace/dotfiles/home/.config/herdr/plugins/github/herdr-file-viewer-c993314e2614/herdr-plugin.toml",
@@ -112,9 +112,9 @@
       "kind": "github",
       "owner": "smarzban",
       "repo": "herdr-file-viewer",
-      "resolved_commit": "8a3efa14eb10f44d4b2c0b8b838b9d74e2aa1d86",
+      "resolved_commit": "647f03236d9aa20de0b07c9de0a951e13a1e59bf",
       "managed_path": "/Users/trungnguyen/.config/herdr/plugins/github/herdr-file-viewer-c993314e2614",
-      "installed_unix_ms": 1786777780816
+      "installed_unix_ms": 1787031392546
     }
   }
 ]

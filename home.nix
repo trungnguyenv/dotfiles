@@ -33,6 +33,7 @@ in
     jdk17     # Java 17
     maven
     gradle
+    uv        # python package/project manager
     # the font everything renders in
     nerd-fonts.hack
   ]) ++ [
@@ -40,6 +41,7 @@ in
   ];
   fonts.fontconfig.enable = true;
   home.sessionVariables.EDITOR = "nvim";
+  home.sessionPath = [ "$HOME/.local/bin" ];
 
   programs.gh = {
     enable = true;
