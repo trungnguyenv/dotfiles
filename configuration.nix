@@ -45,7 +45,7 @@
     casks = [
       "wezterm"
       "claude"
-      "claude-code"
+      "claude-code@latest"
       "openwhispr"
       "monitorcontrol"
       "antigravity-cli"
