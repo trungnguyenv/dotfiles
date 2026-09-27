@@ -50,6 +50,7 @@
       "monitorcontrol"
       "antigravity-cli"
       "codex"
+      "obsidian"
     ];
   };
 }
