@@ -10,5 +10,10 @@
   "theme": "dark",
   "autoCompactEnabled": true,
   "remoteControlAtStartup": false,
-  "agentPushNotifEnabled": true
+  "agentPushNotifEnabled": true,
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "medium"
+    }
+  }
 }
