@@ -29,12 +29,14 @@
   nix-homebrew = {
     enable = true;
     inherit user;
+    trust.taps = [ "docker/tap" ];
   };
   homebrew = {
     enable = true;
     onActivation.cleanup = "zap";  # remove anything not listed here
     onActivation.autoUpdate = true;
     onActivation.extraFlags = [ "--force" ];
+    taps = [ "docker/tap" ];
     brews = [
       "herdr"
       "mole"
@@ -51,6 +53,7 @@
       "antigravity-cli"
       "codex"
       "obsidian"
+      "docker/tap/sbx"
     ];
   };
 }
