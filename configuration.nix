@@ -54,6 +54,7 @@
       "codex"
       "obsidian"
       "docker/tap/sbx"
+      "transmission"
     ];
   };
 }
