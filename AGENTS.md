@@ -1,7 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
+This file provides guidance to AI coding agents (Claude Code, Codex, opencode) when working with code in this repository.
 ## What this is
 
 Personal nix-darwin flake for a single Mac (`darwinConfigurations."mac"`, aarch64-darwin). Combines nix-darwin (system/macOS defaults), home-manager (user packages/dotfiles), and nix-homebrew (Homebrew casks managed declaratively).
