@@ -55,6 +55,7 @@
       "obsidian"
       "docker/tap/sbx"
       "transmission"
+      "font-sf-mono-nerd-font-ligaturized"
     ];
   };
 }

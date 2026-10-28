@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-config.font = wezterm.font("Hack Nerd Font")
+config.font = wezterm.font_with_fallback({ "Liga SFMono Nerd Font", "Hack Nerd Font" })
 config.font_size = 14.0
 config.color_scheme = "Builtin Dark"
 config.window_decorations = "RESIZE"
