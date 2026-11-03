@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.font = wezterm.font_with_fallback({ { family = "Liga SFMono Nerd Font", weight = "Light" }, "Hack Nerd Font" })
-config.font_size = 12.0
+config.font_size = 13.0
 config.color_scheme = "Builtin Dark"
 config.window_background_opacity = 0.85
 config.macos_window_background_blur = 20
