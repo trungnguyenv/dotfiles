@@ -1,4 +1,4 @@
-{ config, pkgs, lib, user, treehouse, pkgs-unstable, ... }:
+{ config, pkgs, lib, user, pkgs-unstable, ... }:
 let
   dotfiles = "${config.home.homeDirectory}/.dotfiles";
   # Edit-in-place: the real file stays in my repo, ~/.config just points at it.
@@ -19,7 +19,7 @@ in
   home.username = user;
   home.homeDirectory = "/Users/${user}";
   home.stateVersion = "24.11";
-  home.packages = (with pkgs; [
+  home.packages = with pkgs; [
     # cli i use constantly
     ripgrep   # fast search
     fd        # fast find
@@ -36,8 +36,6 @@ in
     uv        # python package/project manager
     # the font everything renders in
     nerd-fonts.hack
-  ]) ++ [
-    treehouse.packages.${pkgs.system}.default
   ];
   fonts.fontconfig.enable = true;
   home.sessionVariables.EDITOR = "nvim";

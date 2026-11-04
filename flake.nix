@@ -10,14 +10,9 @@
 
     home-manager.url = "github:nix-community/home-manager/release-26.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-
-    treehouse = {
-      url = "github:kunchenguid/treehouse";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = inputs@{ self, nix-darwin, nix-homebrew, home-manager, nixpkgs, nixpkgs-unstable, treehouse }:
+  outputs = inputs@{ self, nix-darwin, nix-homebrew, home-manager, nixpkgs, nixpkgs-unstable }:
     let
       user = "trungnguyen";
       system = "aarch64-darwin";
@@ -33,7 +28,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = { inherit user treehouse pkgs-unstable; };
+            home-manager.extraSpecialArgs = { inherit user pkgs-unstable; };
             home-manager.users.${user} = import ./home.nix;
           }
         ];
