@@ -15,5 +15,8 @@
   "theme": "dark",
   "autoCompactEnabled": true,
   "remoteControlAtStartup": false,
-  "agentPushNotifEnabled": true
+  "agentPushNotifEnabled": true,
+  "attribution": {
+    "commit": ""
+  }
 }
