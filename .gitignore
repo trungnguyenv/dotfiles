@@ -6,5 +6,10 @@ home/.config/herdr/*.sock.agent
 home/.config/herdr/session-snapshots/
 home/.config/herdr/release-notes.json
 home/.config/herdr/.plugins.lock
-home/.config/herdr/plugins
+home/.config/herdr/plugins.json
+home/.config/herdr/plugins/*
+# ...except herdr-lazy's declared plugin set, which is the source of truth for what gets installed
+!home/.config/herdr/plugins/config/
+home/.config/herdr/plugins/config/*
+!home/.config/herdr/plugins/config/herdr-lazy/
 

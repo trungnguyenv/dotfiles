@@ -18,7 +18,7 @@ Personal nix-darwin flake for a single Mac (`darwinConfigurations."mac"`, aarch6
 - `configuration.nix` — system-level: macOS `system.defaults` (dark mode, key repeat, dock/finder/trackpad tweaks), and the `homebrew` block (`onActivation.cleanup = "zap"` means anything not listed in `casks`/`brews` gets removed on rebuild — be deliberate about additions/removals here).
 - `home.nix` — user-level: CLI packages, zsh (aliases, autosuggestion/syntax-highlighting), starship prompt, and dotfile wiring via `mkOutOfStoreSymlink` pointing at `~/.dotfiles/home/...`. That pattern means the *real* config files live under `home/` in this repo and are edited in place — `home.nix` only declares the symlink, so config content changes don't need a rebuild, only new symlink entries do.
   - `home/AGENTS.md` is fanned out to Claude/Codex/opencode as a shared agent-instructions file (currently a placeholder — fill in with personal preferences).
-  - `~/.config/herdr` is wired up the same way, symlinked to `home/.config/herdr` (config cloned from kunchenguid/dotfiles); its runtime artifacts (`*.log`, `session.json`, `*.sock`) are gitignored.
+  - `~/.config/herdr` is wired up the same way, symlinked to `home/.config/herdr` (config cloned from kunchenguid/dotfiles); its runtime artifacts (`*.log`, `session.json`, `*.sock`, `plugins.json`, plugin checkouts) are gitignored. The plugin set is declared by herdr-lazy's `plugins.list`/`plugins.lock` in `home/.config/herdr/plugins/config/herdr-lazy/`, which are tracked; on a new machine run `herdr plugin install natori-hrj/herdr-lazy`, then `herdr-lazy restore`.
 
 ## Package source: nix pkgs vs Homebrew
 
