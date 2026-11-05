@@ -55,6 +55,13 @@ in
     syntaxHighlighting.enable = true;  # commands turn green when valid
     initContent = ''
       bindkey '^f' autosuggest-accept
+
+      herdr-lazy() {
+        local root
+        root=$(herdr plugin list --json | python3 -c \
+          "import json,sys;print([p['plugin_root'] for p in json.load(sys.stdin)['result']['plugins'] if p['plugin_id']=='herdr-lazy'][0])")
+        "$root/target/release/herdr-lazy" "$@"
+      }
     '';
   };
 
