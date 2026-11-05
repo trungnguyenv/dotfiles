@@ -12,4 +12,5 @@ home/.config/herdr/plugins/*
 !home/.config/herdr/plugins/config/
 home/.config/herdr/plugins/config/*
 !home/.config/herdr/plugins/config/herdr-lazy/
+home/.config/herdr/plugins/config/herdr-lazy/bootstrapped
 
