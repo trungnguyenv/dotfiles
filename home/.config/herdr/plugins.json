@@ -2,11 +2,11 @@
   {
     "plugin_id": "herdr-file-viewer",
     "name": "herdr-file-viewer",
-    "version": "1.16.0",
-    "min_herdr_version": "0.7.0",
+    "version": "1.18.0",
+    "min_herdr_version": "0.7.5",
     "description": "A git-aware, read-only file viewer: a keyboard-driven TUI in a herdr split pane.",
-    "manifest_path": "/Users/trungnguyen/Workspace/dotfiles/home/.config/herdr/plugins/github/herdr-file-viewer-c993314e2614/herdr-plugin.toml",
-    "plugin_root": "/Users/trungnguyen/Workspace/dotfiles/home/.config/herdr/plugins/github/herdr-file-viewer-c993314e2614",
+    "manifest_path": "/Users/trungnguyen/dotfiles/home/.config/herdr/plugins/github-installations/herdr-file-viewer-c993314e2614/94734-0/checkout/herdr-plugin.toml",
+    "plugin_root": "/Users/trungnguyen/dotfiles/home/.config/herdr/plugins/github-installations/herdr-file-viewer-c993314e2614/94734-0/checkout",
     "enabled": true,
     "platforms": [
       "linux",
@@ -50,6 +50,34 @@
         "command": [
           "bash",
           "scripts/open-file-viewer.sh"
+        ]
+      },
+      {
+        "id": "open-file-viewer-at",
+        "title": "Open file viewer at…",
+        "description": "Ask for a directory in a popup, then open the file viewer there in a split pane.",
+        "platforms": [
+          "linux",
+          "macos"
+        ],
+        "command": [
+          "bash",
+          "scripts/open-file-viewer-at.sh",
+          "split"
+        ]
+      },
+      {
+        "id": "open-file-viewer-at-tab",
+        "title": "Open file viewer at… (tab)",
+        "description": "Ask for a directory in a popup, then open the file viewer there in a new tab.",
+        "platforms": [
+          "linux",
+          "macos"
+        ],
+        "command": [
+          "bash",
+          "scripts/open-file-viewer-at.sh",
+          "tab"
         ]
       },
       {
@@ -106,15 +134,30 @@
         "command": [
           "./target/release/herdr-file-viewer"
         ]
+      },
+      {
+        "id": "root-picker",
+        "title": "Open file viewer at",
+        "platforms": [
+          "linux",
+          "macos"
+        ],
+        "placement": "popup",
+        "width": "60%",
+        "height": 16,
+        "command": [
+          "./target/release/herdr-file-viewer",
+          "--pick-root"
+        ]
       }
     ],
     "source": {
       "kind": "github",
       "owner": "smarzban",
       "repo": "herdr-file-viewer",
-      "resolved_commit": "647f03236d9aa20de0b07c9de0a951e13a1e59bf",
-      "managed_path": "/Users/trungnguyen/.config/herdr/plugins/github/herdr-file-viewer-c993314e2614",
-      "installed_unix_ms": 1787031392546
+      "resolved_commit": "97ba479f6ecd577ca5acaad2f32983c852355f9f",
+      "managed_path": "/Users/trungnguyen/.config/herdr/plugins/github-installations/herdr-file-viewer-c993314e2614/94734-0/checkout",
+      "installed_unix_ms": 1793876167987
     }
   }
 ]
