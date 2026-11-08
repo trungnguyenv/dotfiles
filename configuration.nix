@@ -43,6 +43,7 @@
       "glow"
       "git-delta"
       "bat"
+      "xcodegen"
     ];
     casks = [
       "wezterm"
