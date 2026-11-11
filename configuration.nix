@@ -58,6 +58,7 @@
       "transmission"
       "visual-studio-code"
       "font-sf-mono-nerd-font-ligaturized"
+      "font-fira-code-nerd-font"
     ];
   };
 }
