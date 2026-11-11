@@ -41,6 +41,14 @@ in
   home.sessionVariables.EDITOR = "nvim";
   home.sessionPath = [ "$HOME/.local/bin" ];
 
+  programs.git = {
+    enable = true;
+    settings.user = {
+      name = "Trung Nguyen";
+      email = "nguyenviettrung1995@gmail.com";
+    };
+  };
+
   programs.gh = {
     enable = true;
     settings = {
